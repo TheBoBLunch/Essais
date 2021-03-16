@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Image qui suit la souris</title>
+</head>
+<body>
+    <img src="image.png" alt="Image qui quit la souris" id="image_suit_souris" style="position:absolute;display:block;z-index:5"/>
+    <script type="text/javascript">
+    document.onmousemove = suitsouris;
+    function suitsouris(evenement)
+    {
+    	if(navigator.appName=="Microsoft Internet Explorer")
+        {
+        	var x = event.x.document.body.scrollLeft;
+            var y = event.x.document.body.scrolTop;
+        }
+        else
+        {
+        	var x = event.pageX;
+            var y = event.pageY;
+        }
+        document.getElementById("image_suit_souris").style.left=(x-1)+'px';
+	    document.getElementById("image_suit_souris").style.top=(y-1)+'px';
+    }
+    </script>
+</body>
+</html>

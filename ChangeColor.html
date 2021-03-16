@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calque</title>
+</head>
+<body>
+	<p>Pour le voir se deplacer, merci d'appuyer sur le bouton 'visible'</p>
+    <div id="moncalque" style="position:absolute;top:300px;left:100px;visibility:hidden;background-color:yellow;width:200;color:black">
+	Ceci est un calque
+	</div>
+    <input type="button" value="visible" onClick=document.getElementById("moncalque").style.visibility="visible";>
+    <input type="button" value="caché" onClick=document.getElementById("moncalque").style.visibility="hidden";>
+    <br/>
+    <p>Déplacement</p>
+    <input type="button" value="haut" onClick=document.getElementById("moncalque").style.top=parseInt(document.getElementById("moncalque").style.top)-10;>
+    <input type="button" value="bas" onClick=document.getElementById("moncalque").style.top=parseInt(document.getElementById("moncalque").style.top)+10;>
+    <input type="button" value="gauche" onClick=document.getElementById("moncalque").style.left=parseInt(document.getElementById("moncalque").style.left)-10;>
+    <input type="button" value="droit" onClick=document.getElementById("moncalque").style.left=parseInt(document.getElementById("moncalque").style.left)+10;>
+    <br/>
+    <p>Couleur de fond</p>
+    <input type="button" value="red" onClick=document.getElementById("moncalque").style.backgroundColor="red";>
+    <input type="button" value="pink" onClick=document.getElementById("moncalque").style.backgroundColor="pink";>
+    <input type="button" value="yellow" onClick=document.getElementById("moncalque").style.backgroundColor="yellow";>
+    <input type="button" value="green" onClick=document.getElementById("moncalque").style.backgroundColor="green";>
+    <p>Couleur du text</p>
+    <input type="button" value="black" onClick=document.getElementById("moncalque").style.color="black";>
+    <input type="button" value="white" onClick=document.getElementById("moncalque").style.color="white";>
+    <input type="button" value="brown" onClick=document.getElementById("moncalque").style.color="brown";>
+    <input type="button" value="grey" onClick=document.getElementById("moncalque").style.color="grey";>
+    <script>
+    </script>
+</body>
+</html>
